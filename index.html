@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function toUpperCase(a) {
+        return a.toUpperCase();
+    }
+    console.log(toUpperCase("hello world"));
+    
+    function toLowerCase(b) {
+        return b.toLowerCase();
+    }
+    console.log(toLowerCase("HELLO WORLD"));
+    
+    function reverseString(c) {
+        return c.split("").reverse().join("");
+    }
+    console.log(reverseString("hello"));
+    
+    function countVowels(input) {
+        const matches = input.match(/[aeiouAEIOU]/g);
+        return matches ? matches.length : 0;
+    }
+    console.log(countVowels("hello world"));
+    
+    function validateUsername(username) {
+        const isValid = username.length >= 5 && username.length <= 15;
+        return isValid ? "Username is valid" : "Username is invalid";
+    }
+    console.log(validateUsername("john_doe"));
+    
+    function formatEmail(firstName, lastName) {
+        const email = `${firstName.toLowerCase()}.${lastName.toLowerCase()}@gmail.com`;
+        return email;
+    }
+    console.log(formatEmail("Shubham", "Penti"));
+    
+    function countWords(sentence) {
+        const words = sentence.split(" ");
+        return words.length;
+    }
+    console.log(countWords("This is a sample sentence"));
+    
+    function isPalindrome(input) {
+        const reversed = input.split("").reverse().join("");
+        return input === reversed ? "It is a palindrome" : "Not a palindrome";
+    }
+    console.log(isPalindrome("dad"));
+    console.log(isPalindrome("shubham"));
+</script>
+    
+</body>
+</html>
